@@ -40,6 +40,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: php
+    tty: true
     volumes:
       - ./src:/var/www
     ports:
